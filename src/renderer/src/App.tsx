@@ -8,8 +8,8 @@ const App = () => {
     <>
       <div className="h-screen grid grid-cols-4 grid-rows-12">
         <Draggable></Draggable>
-        <Sidebar></Sidebar>
-        <Content></Content>
+        <Sidebar />
+        <Content />
         <Settings></Settings>
       </div>
     </>
