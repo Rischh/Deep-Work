@@ -1,17 +1,14 @@
+import Props from '@renderer/models/Props'
 import Button from './button/Button'
 
-const Sidebar = () => {
-  const handleSelectedSection = (children: string) => {
-    console.log(children)
-  }
-
+const Sidebar = ({ onSelectSection }: Props) => {
   return (
     <>
       <div className="mt-7 col-span-1 row-span-11">
         <div className="mt-1 flex flex-col px-8">
-          <Button onSelectedSection={handleSelectedSection}>Home</Button>
-          <Button onSelectedSection={handleSelectedSection}>Session</Button>
-          <Button onSelectedSection={handleSelectedSection}>BlockList</Button>
+          <Button onSelectSection={onSelectSection}>Home</Button>
+          <Button onSelectSection={onSelectSection}>Session</Button>
+          <Button onSelectSection={onSelectSection}>Blocked</Button>
         </div>
       </div>
     </>

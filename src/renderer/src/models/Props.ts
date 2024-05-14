@@ -1,6 +1,6 @@
 interface Props {
   children: string
-  onSelectedSection: (section: string) => void
+  onSelectSection: (children: string) => void
 }
 
 export default Props
