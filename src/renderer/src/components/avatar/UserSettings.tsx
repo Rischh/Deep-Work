@@ -11,8 +11,6 @@ const UserSettings = ({ email, image }: { email: string; image?: string }) => {
   })
   const svg = avatar.toString()
 
-  console.log(svg)
-
   const finalImage = image ?? svg
 
   return (
