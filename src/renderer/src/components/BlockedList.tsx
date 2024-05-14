@@ -1,6 +1,13 @@
 const BlockedList = () => {
+  const unprodWebsites = [
+    'www.tiktok.com',
+    'www.facebook.com',
+    'www.instagram.com',
+    'www.netflix.com'
+  ]
+
   return (
-    <div className="w-full h-full flex justify-center">
+    <div className="flex flex-col">
       <form>
         <input
           type="url"
@@ -10,6 +17,11 @@ const BlockedList = () => {
           required
         />
       </form>
+      <ul className="">
+        {unprodWebsites.map((website) => (
+          <li key={website}>{website}</li>
+        ))}
+      </ul>
     </div>
   )
 }
