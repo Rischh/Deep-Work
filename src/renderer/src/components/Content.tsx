@@ -1,4 +1,4 @@
-import BlockedList from './BlockedList'
+import Blocked from './Blocked'
 import Home from './Home'
 import Session from './Session'
 
@@ -26,8 +26,8 @@ const Content = ({ content }: ContentProps) => {
   } else if (content === 'Blocked') {
     return (
       <div className="col-span-3 row-span-12 bg-slate-900/65 border-l border-l-white/10">
-        <div className="h-screen flex justify-center items-center font-semibold text-2xl text-gray-500">
-          <BlockedList />
+        <div className="h-screen w-full flex justify-center font-semibold text-2xl text-gray-500">
+          <Blocked />
         </div>
       </div>
     )
