@@ -1,5 +1,11 @@
 const Session = () => {
-  return <div>Session</div>
+  const handleClick = () => {}
+
+  return (
+    <button onClick={handleClick} className="btn btn-wide">
+      Session
+    </button>
+  )
 }
 
 export default Session
