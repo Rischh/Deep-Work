@@ -18,9 +18,7 @@ const Content = ({ content }: ContentProps) => {
   } else if (content === 'Session') {
     return (
       <div className="col-span-3 row-span-12 bg-slate-900/65 border-l border-l-white/10">
-        <div className="h-screen flex justify-center items-center font-semibold text-2xl text-gray-500">
-          <Session />
-        </div>
+        <Session />
       </div>
     )
   } else if (content === 'Blocked') {

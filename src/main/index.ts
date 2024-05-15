@@ -13,6 +13,7 @@ function createWindow(): void {
     center: true,
     title: 'DeepWork',
     vibrancy: 'under-window',
+    transparent: true,
     titleBarStyle: 'hidden',
     frame: false,
     trafficLightPosition: { x: 15, y: 10 },

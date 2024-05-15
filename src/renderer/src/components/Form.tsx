@@ -1,3 +1,4 @@
+import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldValues, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
@@ -8,7 +9,11 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>
 
 const Form = () => {
-  const { register, handleSubmit } = useForm<FormData>()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm<FormData>({ resolver: zodResolver(schema) })
 
   const onSubmit = (data: FieldValues) => console.log(data)
 
@@ -17,11 +22,12 @@ const Form = () => {
       <label className="input input-bordered input-primary flex items-center gap-2">
         Url
         <input
-          {...register('url', { required: true, minLength: 7 })}
+          {...register('url')}
           type="url"
           className="grow"
           placeholder="https://www.website.com"
         />
+        {errors.url && <span className="text-red-500">{errors.url.message}</span>}
       </label>
     </form>
   )

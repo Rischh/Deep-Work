@@ -1,10 +1,16 @@
-const Session = () => {
-  const handleClick = () => {}
+import CreateSession from './CreateSession'
+import EditSession from './EditSession'
+import TemplateSession from './TemplateSession'
 
+const Session = () => {
   return (
-    <button onClick={handleClick} className="btn btn-wide">
-      Session
-    </button>
+    <>
+      <div className="h-screen overflow-x-hidden ">
+        <CreateSession></CreateSession>
+        <EditSession></EditSession>
+        <TemplateSession></TemplateSession>
+      </div>
+    </>
   )
 }
 
