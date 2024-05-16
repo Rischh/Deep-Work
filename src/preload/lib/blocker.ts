@@ -40,5 +40,3 @@ const blocker = async (
 
   // prévoir clearTimeout(timeoutID) si jamais
 }
-
-export { blocker, delay, filePath, redirectPath, unprodWebsites }
