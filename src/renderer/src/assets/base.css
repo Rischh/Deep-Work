@@ -4,6 +4,10 @@
 
 @import 'daisyui';
 
+body {
+  user-select: none;
+}
+
 .draggable {
   -webkit-app-region: drag;
 }
