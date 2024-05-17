@@ -1,8 +1,11 @@
 import { RendererProps } from '../models/Props'
 import Blocked from './Blocked'
 import CreateSession from './CreateSession'
+import EditSession from './EditSession'
 import Home from './Home'
+import QuickFocus from './QuickFocus'
 import Session from './Session'
+import Templates from './Templates'
 
 const Content = ({ content, onSelectSession }: RendererProps) => {
   return (
@@ -12,6 +15,9 @@ const Content = ({ content, onSelectSession }: RendererProps) => {
       {content === 'Home' ? <Home /> : null}
       {content === 'create' ? <CreateSession /> : null}
       {content === '' ? <Home /> : null}
+      {content === 'edit' ? <EditSession /> : null}
+      {content === 'quick' ? <QuickFocus /> : null}
+      {content === 'templates' ? <Templates /> : null}
     </div>
   )
 }

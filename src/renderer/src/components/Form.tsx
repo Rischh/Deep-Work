@@ -19,16 +19,12 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label className="input input-bordered input-primary flex items-center gap-2">
-        Url
-        <input
-          {...register('url')}
-          type="url"
-          className="grow"
-          placeholder="https://www.website.com"
-        />
-        {errors.url && <span className="text-red-500">{errors.url.message}</span>}
+      <label className="input flex">
+        <input {...register('url')} type="url" className="grow" placeholder="url" />
       </label>
+      {errors.url && (
+        <span className="flex justify-center mt-4 text-red-500">{errors.url.message}</span>
+      )}
     </form>
   )
 }
