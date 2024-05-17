@@ -1,7 +1,7 @@
-import Props from '@renderer/models/Props'
+import { SectionProps } from '../models/Props'
 import Button from './button/Button'
 
-const Sidebar = ({ onSelectSection }: Props) => {
+const Sidebar = ({ onSelectSection }: SectionProps) => {
   return (
     <>
       <div className="mt-7 col-span-1 row-span-11">

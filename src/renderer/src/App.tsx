@@ -11,12 +11,16 @@ const App = () => {
     setContent(children)
   }
 
+  const handleSelectSession = (session: string) => {
+    setContent(session)
+  }
+
   return (
     <>
-      <div className="h-screen grid grid-cols-4 grid-rows-12">
+      <div className="h-screen grid grid-cols-5 grid-rows-12">
         <Draggable />
         <Sidebar onSelectSection={handleSelectSection} />
-        <Content content={content} />
+        <Content content={content} onSelectSession={handleSelectSession} />
         <Settings />
       </div>
     </>

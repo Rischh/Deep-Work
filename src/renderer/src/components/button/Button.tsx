@@ -1,6 +1,6 @@
-import Props from '@renderer/models/Props'
+import { SectionProps } from '../../models/Props'
 
-const Button = ({ children, onSelectSection }: Props) => {
+const Button = ({ children, onSelectSection }: SectionProps) => {
   return (
     <button
       onClick={() => onSelectSection(children)}

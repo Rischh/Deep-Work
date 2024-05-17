@@ -1,8 +1,8 @@
 import { initials } from '@dicebear/collection'
 import { createAvatar } from '@dicebear/core'
-import AvatarImage from './AvatarImage'
+import AvatarImage from '../avatar/AvatarImage'
 
-const UserSettings = ({ email, image }: { email: string; image?: string }) => {
+const ButtonUserSettings = ({ email, image }: { email: string; image?: string }) => {
   const avatar = createAvatar(initials, {
     seed: `${email}`,
     radius: 20,
@@ -15,9 +15,11 @@ const UserSettings = ({ email, image }: { email: string; image?: string }) => {
 
   return (
     <>
-      <AvatarImage svg={finalImage} />
+      <button>
+        <AvatarImage svg={finalImage} />
+      </button>
     </>
   )
 }
 
-export default UserSettings
+export default ButtonUserSettings
