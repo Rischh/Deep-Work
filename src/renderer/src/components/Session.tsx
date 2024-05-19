@@ -8,22 +8,30 @@ const Session = ({ onSelectSession }: SessionProps) => {
           id="CreateSession"
           onClick={() => onSelectSession('create')}
           className="bg-slate-600 rounded-lg min-h-40 col-span-full mx-2 "
-        ></button>
+        >
+          Create
+        </button>
         <button
           onClick={() => onSelectSession('edit')}
           id="EditSession"
           className="bg-slate-500 rounded-lg min-h-48 "
-        ></button>
+        >
+          Edit
+        </button>
         <button
           onClick={() => onSelectSession('templates')}
           id="Templates"
           className="bg-slate-400 rounded-lg "
-        ></button>
+        >
+          Templates
+        </button>
         <button
           onClick={() => onSelectSession('quick')}
           id="Quick Focus"
           className="bg-slate-300 rounded-lg  col-span-full min-h-40 mx-5"
-        ></button>
+        >
+          Quick Focus
+        </button>
       </div>
     </>
   )

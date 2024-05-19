@@ -1,8 +1,9 @@
 import { initials } from '@dicebear/collection'
 import { createAvatar } from '@dicebear/core'
+import { BtnUserSettingsProps } from '@renderer/models/Props'
 import AvatarImage from '../avatar/AvatarImage'
 
-const ButtonUserSettings = ({ email, image }: { email: string; image?: string }) => {
+const ButtonUserSettings = ({ email, image, onSelectUserSettings }: BtnUserSettingsProps) => {
   const avatar = createAvatar(initials, {
     seed: `${email}`,
     radius: 20,
@@ -15,7 +16,7 @@ const ButtonUserSettings = ({ email, image }: { email: string; image?: string })
 
   return (
     <>
-      <button>
+      <button onClick={() => onSelectUserSettings('user')}>
         <AvatarImage svg={finalImage} />
       </button>
     </>

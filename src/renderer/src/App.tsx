@@ -15,13 +15,24 @@ const App = () => {
     setContent(session)
   }
 
+  const handleSelectUserSettings = (user: string) => {
+    setContent(user)
+  }
+
+  const handleSelectAppSettings = (app: string) => {
+    setContent(app)
+  }
+
   return (
     <>
       <div className="h-screen grid grid-cols-5 grid-rows-12">
         <Draggable />
         <Sidebar onSelectSection={handleSelectSection} />
         <Content content={content} onSelectSession={handleSelectSession} />
-        <Settings />
+        <Settings
+          onSelectUserSettings={handleSelectUserSettings}
+          onSelectAppSettings={handleSelectAppSettings}
+        />
       </div>
     </>
   )

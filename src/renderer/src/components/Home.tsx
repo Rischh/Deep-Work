@@ -14,35 +14,38 @@ const Home = () => {
     <>
       {liveSession ? (
         <>
-          <span className="flex justify-center mt-5">Live Session</span>
-          <span className="flex justify-center mt-2">{liveSession}</span>
-          <span className="flex justify-center mt-2">{goal}</span>
-          <div className="flex justify-center mt-2">
-            <button className="btn"></button>
-            {time}
-            <button className="btn"></button>
+          <div className="bg-slate-600 rounded-lg min-h-40 mx-2 ">
+            <span className="flex justify-center mt-5">Live Session</span>
+            <span className="flex justify-center mt-2">{liveSession}</span>
+            <span className="flex justify-center mt-2">{goal}</span>
+            <div className="flex justify-center mt-2">
+              <button className="btn"></button>
+              {time}
+              <button className="btn"></button>
+            </div>
           </div>
         </>
       ) : (
         <div className="flex justify-center mt-5">No Live Session</div>
       )}
-      <span className="flex items-center">
-        <span className="h-px flex-1 bg-black"></span>
-
-        <span className="h-px flex-1 bg-black"></span>
-      </span>
 
       {upcomingSession ? (
         <>
-          <span className="flex justify-center mt-5">Upcoming</span>
-          <span className="flex justify-center mt-2">{upcomingSession}</span>
-          <span className="flex justify-center mt-2">{goal}</span>
-          <span className="flex justify-center mt-2">{date}</span>
-          <span className="flex justify-center mt-2">{start}</span>
+          <div className="bg-slate-600 rounded-lg min-h-40 mx-2 ">
+            <span className="flex justify-center mt-5 ">Upcoming</span>
+            <span className="flex justify-center mt-2">{upcomingSession}</span>
+            <span className="flex justify-center mt-2">{goal}</span>
+            <span className="flex justify-center mt-2">{date}</span>
+            <span className="flex justify-center mt-2">{start}</span>
+          </div>
         </>
       ) : (
         <div className="flex justify-center mt-5">Nothing to Come</div>
       )}
+
+      <div className="flex justify-center mt-6 bg-slate-600 rounded-lg min-h-64 mx-2">
+        Strategic Indicator
+      </div>
     </>
   )
 }
