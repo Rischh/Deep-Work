@@ -11,10 +11,12 @@ const Blocked = () => {
   ]
 
   return (
-    <div className="flex flex-col items-center mt-8 mx-9">
-      <Form></Form>
-      <h1 className="text-2xl font-semibold mt-9">Blocked Websites</h1>
+    <div className="flex flex-col items-center mx-9 ">
+      <h1 className="text-6xl text-slate-50  font-extrabold tracking-tight mt-10">
+        Blocked Websites
+      </h1>
       <div className="mt-9">
+        <Form></Form>
         {unprodWebsites.map((website) => (
           <ToggleActive key={website} website={website} />
         ))}

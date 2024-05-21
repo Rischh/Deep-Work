@@ -5,6 +5,7 @@
 @import 'daisyui';
 
 body {
+  background-image: url(nnoise.svg);
   user-select: none;
 }
 

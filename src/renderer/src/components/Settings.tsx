@@ -5,7 +5,7 @@ import ButtonUserSettings from './button/ButtonUserSettings'
 const Settings = ({ onSelectUserSettings, onSelectAppSettings }: SelectSettings) => {
   return (
     <>
-      <div className="bg-slate-900/25 row-span-1 violet">
+      <div className=" row-span-1 ">
         <div className="flex justify-between m-5">
           <ButtonUserSettings
             email={'rischebourg.amuel@gmail.com'}

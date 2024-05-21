@@ -20,7 +20,7 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <label className="input flex">
-        <input {...register('url')} type="url" className="grow" placeholder="url" />
+        <input {...register('url')} type="url" className="grow" placeholder="Url" />
       </label>
       {errors.url && (
         <span className="flex justify-center mt-4 text-red-500">{errors.url.message}</span>

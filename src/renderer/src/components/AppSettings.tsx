@@ -1,5 +1,5 @@
 const AppSettings = () => {
-  return <div>app settings</div>
+  return <div>a</div>
 }
 
 export default AppSettings
