@@ -14,7 +14,7 @@ const Home = () => {
     <>
       {liveSession ? (
         <>
-          <div className="bg-slate-500 rounded-lg min-h-40 mx-6 ">
+          <div className="bg-slate-50 text-slate-900 rounded-lg min-h-40 mx-6 ">
             <span className="flex justify-center mt-5">Live Session</span>
             <span className="flex justify-center mt-2">{liveSession}</span>
             <span className="flex justify-center mt-2">{goal}</span>
@@ -31,7 +31,7 @@ const Home = () => {
 
       {upcomingSession ? (
         <>
-          <div className="bg-slate-500 rounded-lg min-h-40 mx-2  ">
+          <div className="bg-slate-50 text-slate-900  rounded-lg min-h-40 mx-2  ">
             <span className="flex justify-center mt-5 ">Upcoming</span>
             <span className="flex justify-center mt-2">{upcomingSession}</span>
             <span className="flex justify-center mt-2">{goal}</span>
@@ -43,7 +43,7 @@ const Home = () => {
         <div className="flex justify-center mt-6">Nothing to Come</div>
       )}
 
-      <div className="flex justify-center mt-6 bg-slate-500 rounded-lg min-h-64 mx-2">
+      <div className="flex justify-center mt-6 bg-slate-50 text-slate-900  rounded-lg min-h-64 mx-2">
         Strategic Indicator
       </div>
     </>

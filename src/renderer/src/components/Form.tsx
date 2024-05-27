@@ -18,7 +18,7 @@ const Form = () => {
   const onSubmit = (data: FieldValues) => console.log(data)
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="overflow-y-scroll" onSubmit={handleSubmit(onSubmit)}>
       <label className="input flex">
         <input {...register('url')} type="url" className="grow" placeholder="Url" />
       </label>

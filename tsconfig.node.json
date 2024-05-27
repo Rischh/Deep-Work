@@ -1,6 +1,6 @@
 {
   "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
-  "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*", "src/preload/lib"],
+  "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*", "src/preload/lib", "src/main/lib/blocker.ts"],
   "compilerOptions": {
     "composite": true,
     "types": ["electron-vite/node"]
