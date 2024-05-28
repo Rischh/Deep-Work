@@ -1,6 +1,9 @@
+import { ReactNode } from 'react'
+
 export interface SectionProps {
-  children: string
-  onSelectSection: (children: string) => void
+  id: string
+  children: ReactNode
+  onSelectSection: (id: string) => void
 }
 
 export interface ContentProps {

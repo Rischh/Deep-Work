@@ -1,20 +1,21 @@
 import { SessionProps } from '../models/Props'
 
 const Session = ({ onSelectSession }: SessionProps) => {
-  const handleClick = () => {
-    console.log('click')
-  }
-
   return (
     <>
-      <div className="flex flex-col">
-        <button onClick={() => onSelectSession('create')} className="bg-emerald-800">
+      <div className="bg-gradient-to-tr from-[#020414] to-[#1C1B1F] h-12 w-full flex rounded-tr-md border-b border-[#1C1B1F]">
+        <button
+          onClick={() => onSelectSession('create')}
+          className="mx-10 divide-y-2 divide-y-reverse hover:underline underline-offset-[1rem] decoration-[#591DDD] "
+        >
           Create
         </button>
-        <button onClick={() => onSelectSession('edit')} id="EditSession" className="bg-amber-600">
+        <button
+          onClick={() => onSelectSession('edit')}
+          className="hover:underline underline-offset-[1rem] decoration-[#591DDD] "
+        >
           Edit
         </button>
-        <button onClick={handleClick}>Click</button>
       </div>
     </>
   )

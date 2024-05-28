@@ -1,10 +1,10 @@
 import { SectionProps } from '../../models/Props'
 
-const Button = ({ children, onSelectSection }: SectionProps) => {
+const Button = ({ children, onSelectSection, id }: SectionProps) => {
   return (
     <button
-      onClick={() => onSelectSection(children)}
-      className="flex justify-start btn btn-ghost py-2 text-slate-50 mx-3 mb-2 text-base font-medium "
+      onClick={() => onSelectSection(id)}
+      className="w-8 h-8 bg-[#591DDD] mt-7 rounded-md mx-7 custom-shadow flex items-center justify-center text-2xl"
     >
       {children}
     </button>

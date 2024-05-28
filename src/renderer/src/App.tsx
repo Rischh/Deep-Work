@@ -6,6 +6,8 @@ import Sidebar from './components/Sidebar'
 const App = () => {
   const [content, setContent] = useState<string>('')
 
+  console.log(content)
+
   const handleSelectSection = (children: string) => {
     setContent(children)
   }
@@ -16,7 +18,7 @@ const App = () => {
 
   return (
     <>
-      <div className="h-screen grid grid-cols-6 ">
+      <div className="h-screen grid grid-cols-11 border-8 border-[#1d1c20]">
         <Draggable />
         <Sidebar onSelectSection={handleSelectSection} />
         <Content content={content} onSelectSession={handleSelectSession} />

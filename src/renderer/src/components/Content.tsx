@@ -9,11 +9,14 @@ import UserSettings from './UserSettings'
 
 const Content = ({ content, onSelectSession }: RendererProps) => {
   return (
-    <div className="col-span-5 my-2 mr-2 rounded-lg bg-slate-900/50  ">
-      {content === 'Blocked' ? <Blocked /> : null}
-      {content === 'Session' ? <Session onSelectSession={onSelectSession} /> : null}
-      {content === 'Home' ? <Home /> : null}
-      {content === 'Settings' ? <Home /> : null}
+    <div
+      className="col-span-10 bg-gradient-to-tr from-[#010311] to-[#1D1C20] rounded-r-md overflow-y-hidden"
+      style={{ maxHeight: '100vh' }}
+    >
+      {content === 'blocked' ? <Blocked /> : null}
+      {content === 'session' ? <Session onSelectSession={onSelectSession} /> : null}
+      {content === 'home' ? <Home /> : null}
+      {content === 'settings' ? <UserSettings /> : null}
       {content === 'create' ? <CreateSession /> : null}
       {content === '' ? <Home /> : null}
       {content === 'edit' ? <EditSession /> : null}

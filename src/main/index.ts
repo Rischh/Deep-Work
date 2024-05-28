@@ -6,8 +6,8 @@ import icon from '../../resources/icon.png?asset'
 
 function createWindow(): void {
   const mainWindowState = windowStateKeeper({
-    defaultWidth: 1280,
-    defaultHeight: 844
+    defaultWidth: 1200,
+    defaultHeight: 600
   })
 
   // Create the browser window.
@@ -16,7 +16,7 @@ function createWindow(): void {
     y: mainWindowState.y,
     width: mainWindowState.width,
     height: mainWindowState.height,
-    minWidth: 800,
+    minWidth: 1200,
     minHeight: 600,
     show: false,
     autoHideMenuBar: true,
@@ -26,7 +26,6 @@ function createWindow(): void {
     transparent: true,
     titleBarStyle: 'hidden',
     frame: false,
-    trafficLightPosition: { x: 15, y: 10 },
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
