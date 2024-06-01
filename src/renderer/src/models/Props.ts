@@ -17,8 +17,10 @@ export interface SessionProps {
 export type RendererProps = ContentProps & SessionProps
 
 export interface CardProps {
+  children: ReactNode
   span?: string
-  children?: ReactNode
+  color?: string
+  hover?: string
 }
 
 export interface NavbarProps {

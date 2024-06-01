@@ -16,7 +16,9 @@ const Home = () => {
     <>
       <Navbar>
         {liveSession ? (
-          <span className="w-full flex justify-center items-center ">Live Session</span>
+          <div className="w-full flex justify-center items-center ">
+            <span className="bg-red-500 px-2 py-1 rounded">Live Session !</span>
+          </div>
         ) : (
           <span className="w-full flex justify-center items-center ">No Live Session</span>
         )}
@@ -25,23 +27,27 @@ const Home = () => {
         <div className="mb-20">
           {liveSession ? (
             <Card>
-              <div className="flex justify-center mt-2">{liveSession}</div>
-              <div className="flex justify-center mt-2">{goal}</div>
-              <div className="flex justify-center mt-2">
-                <button className="btn bg-[#591DDD]"></button>
-                {time}
-                <button className="btn bg-[#591DDD]"></button>
+              <div className="p-4">
+                <div className="flex justify-center">{liveSession}</div>
+                <div className="flex justify-center mt-2">{goal}</div>
+                <div className="flex justify-center mt-2">
+                  <button className="bg-[#591DDD] w-4 p-4 rounded-3xl"></button>
+                  {time}
+                  <button className="bg-[#591DDD] w-4 p-4 rounded-3xl"></button>
+                </div>
               </div>
             </Card>
           ) : null}
         </div>
         {upcomingSession ? (
           <Card>
-            <span className="flex justify-center mt-5 ">Upcoming</span>
-            <span className="flex justify-center mt-2">{upcomingSession}</span>
-            <span className="flex justify-center mt-2">{goal}</span>
-            <span className="flex justify-center mt-2">{date}</span>
-            <span className="flex justify-center mt-2">{start}</span>
+            <div className="p-4">
+              <span className="flex justify-center">Upcoming</span>
+              <span className="flex justify-center mt-2">{upcomingSession}</span>
+              <span className="flex justify-center mt-2">{goal}</span>
+              <span className="flex justify-center mt-2">{date}</span>
+              <span className="flex justify-center mt-2">{start}</span>
+            </div>
           </Card>
         ) : (
           <div className="flex justify-center mt-6">Nothing to Come</div>

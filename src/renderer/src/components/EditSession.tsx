@@ -2,10 +2,12 @@ import { IoChevronBackOutline } from 'react-icons/io5'
 import { Navbar } from './'
 
 const EditSession = () => {
+  const handleClick = () => {}
+
   return (
     <>
       <Navbar>
-        <button className="mx-5">
+        <button onClick={handleClick} className="mx-5">
           <IoChevronBackOutline></IoChevronBackOutline>
         </button>
       </Navbar>
