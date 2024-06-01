@@ -1,5 +1,4 @@
-import Navbar from './Navbar'
-import Card from './card/Card'
+import { Card, Navbar } from './'
 
 const Home = () => {
   // Just a dummy data

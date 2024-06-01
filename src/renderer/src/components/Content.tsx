@@ -1,8 +1,6 @@
 import { RendererProps } from '../models/Props'
-import Blocked from './Blocked'
-import EditSession from './EditSession'
-import Home from './Home'
-import Session from './Session'
+
+import { Blocked, EditSession, Home, Session } from './'
 
 const Content = ({ content, onSelectSession }: RendererProps) => {
   return (

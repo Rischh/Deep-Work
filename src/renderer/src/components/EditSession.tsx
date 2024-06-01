@@ -1,5 +1,5 @@
 import { IoChevronBackOutline } from 'react-icons/io5'
-import Navbar from './Navbar'
+import { Navbar } from './'
 
 const EditSession = () => {
   return (

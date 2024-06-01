@@ -1,7 +1,7 @@
 import { MdAvTimer, MdDragIndicator } from 'react-icons/md'
 import { TbLockSquare } from 'react-icons/tb'
 import { SectionProps } from '../models/Props'
-import Button from './button/Button'
+import { Button } from './'
 
 const Sidebar = ({ onSelectSection }: SectionProps) => {
   return (

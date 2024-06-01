@@ -1,6 +1,5 @@
 import { SessionProps } from '../models/Props'
-import Navbar from './Navbar'
-import Card from './card/Card'
+import { Card, Navbar } from './'
 
 const Session = ({ onSelectSession }: SessionProps) => {
   return (
