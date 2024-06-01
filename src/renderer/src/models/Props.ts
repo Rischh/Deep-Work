@@ -15,3 +15,12 @@ export interface SessionProps {
 }
 
 export type RendererProps = ContentProps & SessionProps
+
+export interface CardProps {
+  span?: string
+  children?: ReactNode
+}
+
+export interface NavbarProps {
+  children: ReactNode
+}

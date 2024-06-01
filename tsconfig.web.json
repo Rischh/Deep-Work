@@ -5,7 +5,7 @@
     "src/renderer/src/**/*",
     "src/renderer/src/**/*.tsx",
     "src/preload/*.d.ts"
-, "src/preload/lib", "src/renderer/src/models", "src/main/lib/blocker.ts"  ],
+, "src/preload/lib", "src/renderer/src/components/models", "src/main/lib/blocker.ts"  ],
   "compilerOptions": {
     "composite": true,
     "jsx": "react-jsx",

@@ -18,9 +18,9 @@ const Form = () => {
   const onSubmit = (data: FieldValues) => console.log(data)
 
   return (
-    <form className="overflow-y-scroll" onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <label className="input flex">
-        <input {...register('url')} type="url" className="grow" placeholder="Url" />
+        <input className="text-white" {...register('url')} type="url" placeholder="Url" />
       </label>
       {errors.url && (
         <span className="flex justify-center mt-4 text-red-500">{errors.url.message}</span>

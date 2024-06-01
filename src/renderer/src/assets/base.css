@@ -46,7 +46,13 @@ body {
 }
 
 @layer utilities {
-  .custom-shadow {
-    box-shadow: 4px 4px 30px 0.05px #591ddd;
+  .hover-shadow {
+    box-shadow: 6px 6px 30px 0.05px #591ddd;
+  }
+}
+
+@layer utilities {
+  .base-shadow {
+    box-shadow: 1px 1px 10px 0.05px #591ddd;
   }
 }

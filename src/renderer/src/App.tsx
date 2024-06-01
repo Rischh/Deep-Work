@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import Content from './components/Content'
-import Draggable from './components/Draggable'
-import Sidebar from './components/Sidebar'
+import { Content, Draggable, Sidebar } from './components'
 
 const App = () => {
   const [content, setContent] = useState<string>('')
@@ -18,7 +16,7 @@ const App = () => {
 
   return (
     <>
-      <div className="h-screen grid grid-cols-11 border-8 border-[#1d1c20]">
+      <div className="h-screen grid grid-cols-11 border-[7px] border-[#1d1c20]">
         <Draggable />
         <Sidebar onSelectSection={handleSelectSection} />
         <Content content={content} onSelectSession={handleSelectSession} />
@@ -26,4 +24,5 @@ const App = () => {
     </>
   )
 }
+
 export default App
