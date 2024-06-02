@@ -1,54 +1,43 @@
-import { Card, Navbar } from './'
+import { Navbar } from './'
 
 const Home = () => {
   // Just a dummy data
   const liveSession = 'Session 1'
   const upcomingSession = 'Session 2'
 
-  const time = '10:00 AM - 11:00 AM'
+  const time = '10:00 - 11:00 '
 
-  const goal = 'Goal: Learn about React'
+  const goal = `Goal: Learn about React`
 
   const date = '2024-05-31'
-  const start = 'Starting : 12 hours'
+  const start = `(Starting : 12 hours)`
 
   return (
     <>
-      <Navbar>
+      <Navbar></Navbar>
+      <div className=" p-10">
         {liveSession ? (
-          <div className="w-full flex justify-center items-center ">
-            <span className="bg-red-500 px-2 py-1 rounded">Live Session !</span>
-          </div>
-        ) : (
-          <span className="w-full flex justify-center items-center ">No Live Session</span>
-        )}
-      </Navbar>
-      <div className="p-5">
-        <div className="mb-20">
-          {liveSession ? (
-            <Card>
-              <div className="p-4">
-                <div className="flex justify-center">{liveSession}</div>
-                <div className="flex justify-center mt-2">{goal}</div>
-                <div className="flex justify-center mt-2">
-                  <button className="bg-[#591DDD] w-4 p-4 rounded-3xl"></button>
-                  {time}
-                  <button className="bg-[#591DDD] w-4 p-4 rounded-3xl"></button>
-                </div>
-              </div>
-            </Card>
-          ) : null}
-        </div>
-        {upcomingSession ? (
-          <Card>
-            <div className="p-4">
-              <span className="flex justify-center">Upcoming</span>
-              <span className="flex justify-center mt-2">{upcomingSession}</span>
-              <span className="flex justify-center mt-2">{goal}</span>
-              <span className="flex justify-center mt-2">{date}</span>
-              <span className="flex justify-center mt-2">{start}</span>
+          <>
+            <div className="font-extrabold text-2xl">Live</div>
+            <h2 className="text-lg font-bold mt-5">{liveSession}</h2>
+            <div className="mt-2">{goal}</div>
+            <div className="flex mt-2">
+              <button className="bg-[#591DDD] w-4 p-4 rounded-3xl"></button>
+              <div className="mx-5 pt-1">{time}</div>
+              <button className="bg-[#591DDD] w-4 p-4 rounded-3xl"></button>
             </div>
-          </Card>
+          </>
+        ) : (
+          <div className="w-full flex justify-center items-center ">No Live Session</div>
+        )}
+        {upcomingSession ? (
+          <>
+            <h1 className="mt-20 font-extrabold text-2xl">Upcoming (5)</h1>
+            <h2 className="mt-5 font-bold text-lg">{upcomingSession}</h2>
+            <div className="mt-2">{goal}</div>
+            <div className="mt-2">{date}</div>
+            <div className="mt-2 text-xs">{start}</div>
+          </>
         ) : (
           <div className="flex justify-center mt-6">Nothing to Come</div>
         )}

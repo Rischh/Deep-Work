@@ -47,12 +47,12 @@ body {
 
 @layer utilities {
   .hover-shadow {
-    box-shadow: 6px 6px 30px 0.05px #591ddd;
+    box-shadow: 4px 4px 20px 0.05px #5c1de3;
   }
 }
 
 @layer utilities {
   .base-shadow {
-    box-shadow: 1px 1px 10px 0.05px #591ddd;
+    box-shadow: 4px 4px 100px 0.05px #5c1de3;
   }
 }
