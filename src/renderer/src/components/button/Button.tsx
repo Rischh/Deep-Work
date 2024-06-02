@@ -1,6 +1,6 @@
-import { SectionProps } from '../../models/Props'
+import { ButtonProps } from '../../models/Props'
 
-const Button = ({ children, onSelectSection, id }: SectionProps) => {
+const Button = ({ children, onSelectSection, id }: ButtonProps) => {
   return (
     <button
       onClick={() => onSelectSection(id)}

@@ -1,20 +1,15 @@
 import { ReactNode } from 'react'
 
-export interface SectionProps {
-  id: string
+export interface ButtonProps {
   children: ReactNode
+  id: string
   onSelectSection: (id: string) => void
 }
 
-export interface ContentProps {
-  content: string
-}
-
 export interface SessionProps {
+  value?: string
   onSelectSession: (session: string) => void
 }
-
-export type RendererProps = ContentProps & SessionProps
 
 export interface CardProps {
   children: ReactNode
@@ -23,6 +18,8 @@ export interface CardProps {
   hover?: string
 }
 
-export interface NavbarProps {
-  children: ReactNode
+export interface NodeTemplateProps {
+  name: string
+  date: string
+  img: string
 }

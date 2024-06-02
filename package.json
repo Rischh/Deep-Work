@@ -21,8 +21,6 @@
     "build:linux": "electron-vite build && electron-builder --linux"
   },
   "dependencies": {
-    "@dicebear/collection": "^8.0.1",
-    "@dicebear/core": "^8.0.1",
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
     "@hookform/resolvers": "^3.4.0",

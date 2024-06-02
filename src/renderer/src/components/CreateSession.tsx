@@ -27,25 +27,25 @@ const CreateSession = ({ onSelectSession }: SessionProps) => {
             </div>
           </Card>
           <Card>
-            <NodeTemplate></NodeTemplate>
+            <NodeTemplate name="Miracle Morning" date="5AM to 7AM" img="c"></NodeTemplate>
           </Card>
           <Card>
-            <NodeTemplate></NodeTemplate>
+            <NodeTemplate name="Deep Work" date="8AM to 10AM" img="c"></NodeTemplate>
           </Card>
           <Card>
-            <NodeTemplate></NodeTemplate>
+            <NodeTemplate name="Miracle Morning" date="A" img="c"></NodeTemplate>
           </Card>
           <Card>
-            <NodeTemplate></NodeTemplate>
+            <NodeTemplate name="Miracle Morning" date="A" img="c"></NodeTemplate>
           </Card>
           <Card>
-            <NodeTemplate></NodeTemplate>
+            <NodeTemplate name="Miracle Morning" date="A" img="c"></NodeTemplate>
           </Card>
           <Card>
-            <NodeTemplate></NodeTemplate>
+            <NodeTemplate name="Miracle Morning" date="A" img="c"></NodeTemplate>
           </Card>
           <Card>
-            <NodeTemplate></NodeTemplate>
+            <NodeTemplate name="Just Sleep" date="9PM to 5AM" img="c"></NodeTemplate>
           </Card>
         </div>
       </div>

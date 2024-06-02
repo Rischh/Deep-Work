@@ -1,17 +1,16 @@
-import { useState } from 'react'
+import { useReducer } from 'react'
 import { Content, Draggable, Sidebar } from './components'
+import contentReducer from './components/reducers/contentReducer'
 
 const App = () => {
-  const [content, setContent] = useState<string>('')
+  const [value, dispatch] = useReducer(contentReducer, '')
 
-  console.log(content)
-
-  const handleSelectSection = (children: string) => {
-    setContent(children)
+  const handleSelectSection = (id: string) => {
+    dispatch({ type: id })
   }
 
   const handleSelectSession = (session: string) => {
-    setContent(session)
+    dispatch({ type: session })
   }
 
   return (
@@ -19,7 +18,7 @@ const App = () => {
       <div className="h-screen grid grid-cols-11 border-[7px] border-[#1d1c20]">
         <Draggable />
         <Sidebar onSelectSection={handleSelectSection} />
-        <Content content={content} onSelectSession={handleSelectSession} />
+        <Content value={value} onSelectSession={handleSelectSession} />
       </div>
     </>
   )

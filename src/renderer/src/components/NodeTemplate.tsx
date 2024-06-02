@@ -1,10 +1,12 @@
-const NodeTemplate = () => {
+import { NodeTemplateProps } from '@renderer/models/Props'
+
+const NodeTemplate = ({ name, date, img }: NodeTemplateProps) => {
   return (
     <>
       <div className="p-2">
-        <div className="text-lg font-bold">Morning Routine</div>
-        <div className="text-sm">5AM to 8AM</div>
-        <div>img</div>
+        <div className="text-lg font-medium">{name}</div>
+        <div className="text-sm">{date}</div>
+        <div className="flex justify-center pt-4">{img}</div>
       </div>
     </>
   )
