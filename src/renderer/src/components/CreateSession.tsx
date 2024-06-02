@@ -1,22 +1,30 @@
+import { useContext } from 'react'
 import { Card, Navbar, NodeTemplate } from './'
+import ContentContext from './contexts/contentContext'
 
-const CreateSession = ({
-  onSelectSession
-}: {
-  onSelectSession: (session: 'create' | 'edit') => void
-}) => {
+const CreateSession = () => {
+  const { dispatch } = useContext(ContentContext)
+
+  const handleClick = (session: 'create' | 'edit') => {
+    dispatch({ type: session })
+  }
+
   return (
     <>
       <div className="flex flex-col h-full">
         <Navbar>
           <button
-            onClick={() => onSelectSession('create')}
+            onClick={() => {
+              handleClick('create')
+            }}
             className="mx-10 divide-y-2 divide-y-reverse underline underline-offset-[1rem] decoration-[#591DDD] "
           >
             Create
           </button>
           <button
-            onClick={() => onSelectSession('edit')}
+            onClick={() => {
+              handleClick('edit')
+            }}
             className="hover:underline underline-offset-[1rem] decoration-[#591DDD] "
           >
             Edit

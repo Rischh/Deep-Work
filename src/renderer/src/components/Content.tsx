@@ -1,14 +1,13 @@
-import { ContentProps } from '../models/Props'
 import { Blocked, CreateSession, EditSession, Home } from './'
 
-const Content = ({ value, onSelectSession }: ContentProps) => {
+const Content = ({ content }: { content: string }) => {
   return (
     <div className="col-span-10 bg-gradient-to-tr from-[#010311] to-[#1D1C20] rounded-r-md overflow-y-auto">
-      {value === '' ? <Home /> : null}
-      {value === 'home' ? <Home /> : null}
-      {value === 'create' ? <CreateSession onSelectSession={onSelectSession} /> : null}
-      {value === 'blocked' ? <Blocked /> : null}
-      {value === 'edit' ? <EditSession /> : null}
+      {content === '' ? <Home /> : null}
+      {content === 'home' ? <Home /> : null}
+      {content === 'create' ? <CreateSession /> : null}
+      {content === 'blocked' ? <Blocked /> : null}
+      {content === 'edit' ? <EditSession /> : null}
     </div>
   )
 }
