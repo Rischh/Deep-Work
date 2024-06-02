@@ -2,7 +2,11 @@ import { MdAvTimer, MdDragIndicator } from 'react-icons/md'
 import { TbLockSquare } from 'react-icons/tb'
 import { Button } from './'
 
-const Sidebar = ({ onSelectSection }: { onSelectSection: (id: string) => void }) => {
+const Sidebar = ({
+  onSelectSection
+}: {
+  onSelectSection: (id: 'home' | 'create' | 'blocked') => void
+}) => {
   return (
     <>
       <div className="bg-gradient-to-bl from-[#0F0F14] to-[#010310] col-span-1 rounded-l-md">

@@ -1,8 +1,7 @@
-import { SessionProps } from '../models/Props'
-
+import { ContentProps } from '../models/Props'
 import { Blocked, CreateSession, EditSession, Home } from './'
 
-const Content = ({ value, onSelectSession }: SessionProps) => {
+const Content = ({ value, onSelectSession }: ContentProps) => {
   return (
     <div className="col-span-10 bg-gradient-to-tr from-[#010311] to-[#1D1C20] rounded-r-md overflow-y-auto">
       {value === '' ? <Home /> : null}

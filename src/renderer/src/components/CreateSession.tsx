@@ -1,7 +1,10 @@
-import { SessionProps } from '../models/Props'
 import { Card, Navbar, NodeTemplate } from './'
 
-const CreateSession = ({ onSelectSession }: SessionProps) => {
+const CreateSession = ({
+  onSelectSession
+}: {
+  onSelectSession: (session: 'create' | 'edit') => void
+}) => {
   return (
     <>
       <div className="flex flex-col h-full">

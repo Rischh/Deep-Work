@@ -2,13 +2,13 @@ import { ReactNode } from 'react'
 
 export interface ButtonProps {
   children: ReactNode
-  id: string
-  onSelectSection: (id: string) => void
+  id: 'home' | 'create' | 'blocked'
+  onSelectSection: (id: 'home' | 'create' | 'blocked') => void
 }
 
-export interface SessionProps {
-  value?: string
-  onSelectSession: (session: string) => void
+export interface ContentProps {
+  value: string
+  onSelectSession: (session: 'create' | 'edit') => void
 }
 
 export interface CardProps {

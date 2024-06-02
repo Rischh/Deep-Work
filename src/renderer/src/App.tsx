@@ -5,11 +5,11 @@ import contentReducer from './components/reducers/contentReducer'
 const App = () => {
   const [value, dispatch] = useReducer(contentReducer, '')
 
-  const handleSelectSection = (id: string) => {
+  const handleSelectSection = (id: 'home' | 'create' | 'blocked') => {
     dispatch({ type: id })
   }
 
-  const handleSelectSession = (session: string) => {
+  const handleSelectSession = (session: 'create' | 'edit') => {
     dispatch({ type: session })
   }
 
