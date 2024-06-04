@@ -15,10 +15,15 @@ const Home = () => {
   return (
     <>
       <Navbar></Navbar>
-      <div className=" p-10">
+      <div className="flex flex-col items-center p-10">
         {liveSession ? (
           <>
-            <div className="font-extrabold text-2xl">Live</div>
+            <div className="flex">
+              <div className="w-8 h-8 bg-[#dd1d5a] live-shadow rounded-md">
+                <div className="relative top-2.5 left-2.5 w-3 h-3 bg-slate-50 rounded-full"></div>
+              </div>
+              <div className="font-extrabold text-2xl ml-4">Live</div>
+            </div>
             <h2 className="text-lg font-bold mt-5">{liveSession}</h2>
             <div className="mt-2">{goal}</div>
             <div className="flex mt-2">

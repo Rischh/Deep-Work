@@ -9,7 +9,7 @@ const Sidebar = () => {
         <div className="h-12 border-radial-gradient pb-[1px]">
           <div className="h-full w-full bg-gradient-to-bl from-[#0E0E13] to-[#080912]"></div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           <Button id="home">
             <MdDragIndicator />
           </Button>

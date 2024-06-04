@@ -19,28 +19,18 @@ const CreateSession = () => {
 
   return (
     <>
-      <div className="flex flex-col h-full">
+      <div className="flex flex-col h-full relative">
         <Navbar>
-          <button
-            onClick={() => {
-              handleClick('create')
-            }}
-            className="mx-10 divide-y-2 divide-y-reverse underline underline-offset-[1rem] decoration-[#591DDD] "
-          >
-            <span
-              className="text-slate-50
-            "
-            >
-              Create
-            </span>
+          <button className="mx-10 divide-y-2 divide-y-reverse underline underline-offset-[1rem] decoration-[#591DDD] text-slate-50">
+            Create
           </button>
           <button
             onClick={() => {
               handleClick('edit')
             }}
-            className="hover:underline underline-offset-[1rem] decoration-[#591DDD] "
+            className="hover:underline underline-offset-[1rem] decoration-[#591DDD] text-slate-400"
           >
-            <span className="hover:text-slate-400">Edit</span>
+            Edit
           </button>
         </Navbar>
         <div className="h-full grid grid-cols-3 grid-rows-3 gap-2 p-10">

@@ -1,22 +1,14 @@
 import { electronApp, optimizer } from '@electron-toolkit/utils'
 import { BrowserWindow, app, ipcMain, shell } from 'electron'
-import windowStateKeeper from 'electron-window-state'
 import { join } from 'path'
 import icon from '../../resources/icon.png?asset'
 const isDev = process.env.NODE_ENV === 'development'
 
 function createWindow(): void {
-  const mainWindowState = windowStateKeeper({
-    defaultWidth: 1200,
-    defaultHeight: 600
-  })
-
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    x: mainWindowState.x,
-    y: mainWindowState.y,
-    width: mainWindowState.width,
-    height: mainWindowState.height,
+    width: 1200,
+    height: 600,
     minWidth: 1200,
     minHeight: 600,
     show: false,
@@ -25,7 +17,6 @@ function createWindow(): void {
     title: 'DeepWork',
     vibrancy: 'under-window',
     transparent: true,
-    titleBarStyle: 'hidden',
     frame: false,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
@@ -33,8 +24,6 @@ function createWindow(): void {
       contextIsolation: true
     }
   })
-
-  mainWindowState.manage(mainWindow)
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
