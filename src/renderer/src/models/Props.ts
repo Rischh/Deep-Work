@@ -15,5 +15,4 @@ export interface CardProps {
 export interface NodeTemplateProps {
   name: string
   date: string
-  img: ReactNode
 }

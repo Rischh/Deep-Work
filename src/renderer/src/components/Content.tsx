@@ -1,4 +1,4 @@
-import { Blocked, CreateSession, EditSession, Home } from './'
+import { CreateSession, EditSession, Home } from './'
 
 const Content = ({ content }: { content: string }) => {
   return (
@@ -6,7 +6,6 @@ const Content = ({ content }: { content: string }) => {
       {content === '' ? <Home /> : null}
       {content === 'home' ? <Home /> : null}
       {content === 'create' ? <CreateSession /> : null}
-      {content === 'blocked' ? <Blocked /> : null}
       {content === 'edit' ? <EditSession /> : null}
     </div>
   )

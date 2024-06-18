@@ -1,5 +1,4 @@
 import { MdAvTimer, MdDragIndicator } from 'react-icons/md'
-import { TbLockSquare } from 'react-icons/tb'
 import { Button } from './'
 
 const Sidebar = () => {
@@ -15,9 +14,6 @@ const Sidebar = () => {
           </Button>
           <Button id="create">
             <MdAvTimer />
-          </Button>
-          <Button id="blocked">
-            <TbLockSquare />
           </Button>
         </div>
       </div>
