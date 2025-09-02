@@ -7,6 +7,7 @@ import EditSession from './EditSession'
 import Home from './Home'
 import Navbar from './Navbar'
 import NodeTemplate from './NodeTemplate'
+import Session from './Session'
 import Sidebar from './Sidebar'
 
 export {
@@ -19,5 +20,6 @@ export {
   Home,
   Navbar,
   NodeTemplate,
+  Session,
   Sidebar
 }

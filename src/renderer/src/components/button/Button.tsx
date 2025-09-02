@@ -5,7 +5,7 @@ import ContentContext from '../contexts/contentContext'
 const Button = ({ children, id }: ButtonProps) => {
   const { dispatch } = useContext(ContentContext)
 
-  const handleClick = (id: 'home' | 'create' | 'blocked') => {
+  const handleClick = (id: 'home' | 'create') => {
     dispatch({ type: id })
   }
 

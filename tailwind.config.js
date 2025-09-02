@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {}
   },
-  plugins: [require('daisyui')],
+  plugins: [],
 
   daisyui: {
     base: false, // applies background color and foreground color for root element by default

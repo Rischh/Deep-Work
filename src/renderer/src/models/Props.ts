@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 export interface ButtonProps {
   children: ReactNode
-  id: 'home' | 'create' | 'blocked'
+  id: 'home' | 'create'
 }
 
 export interface CardProps {
